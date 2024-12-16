@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>我的简单网站</title>
+    <style>
+
+        h2 {
+            margin-top: 20px; 
+        }
+
+        p {
+            margin-top: 10px; 
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            text-align: center; 
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .image-container {
+            text-align: center;
+            position: relative;
+        }
+
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .image-container p {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 24px;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <!-- <link rel="stylesheet" href="test1.css"> -->
+        <h1>欢迎来到关于奥特曼的网站！</h1>
+    </header>
+
+    <section id="home">
+        <h2>首页</h2>
+        <p>在这里，你可以知道奥特曼的信息和一些有名的战役。</p>
+        <div class="image-container">
+            <a href="introdution.html">
+                <img src="大合照.jpg" alt="首页图片">
+                <p style="color:rgb(247, 243, 243)"><strong>奥特曼介绍</p>
+            </a>
+        </div>
+        <div class="image-container">
+            <a href="war.html">
+                <img src="image/combat.jpg" alt="首页图片">
+                <p style="color:rgb(247, 243, 243)"><strong>战役介绍</p>
+            </a>
+        </div>
+    </section>
+
+</body>
+</html>

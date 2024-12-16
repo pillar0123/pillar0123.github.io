@@ -1,0 +1,249 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body style */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #f6f6f6;
+    color: #333;
+    padding: 0;
+    font-size: 16px;
+    margin: 0;
+}
+
+/* Container to center content */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header style */
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 60px 0;
+    text-align: center;
+    border-bottom: 5px solid #333;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 3.5em;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+header p {
+    font-size: 1.3em;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    margin-top: 10px;
+}
+
+/* About section style */
+#about {
+    background-color: #fff;
+    padding: 60px 0;
+    text-align: center;
+    border-bottom: 2px solid #ddd;
+}
+
+#about h2 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+#about p {
+    font-size: 1.2em;
+    line-height: 1.8;
+    color: #555;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#skills {
+    background-color: #f4f4f4;
+    padding: 60px 0;
+}
+
+#skills h2 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+#skills ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+#skills ul li {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#skills ul li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Education section style */
+#education {
+    background-color: #fff;
+    padding: 60px 0;
+    border-bottom: 2px solid #ddd;
+}
+
+#education h2 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#education p {
+    font-size: 1.2em;
+    color: #555;
+    text-align: center;
+}
+
+/* Experience section style */
+#experience {
+    background-color: #f4f4f4;
+    padding: 60px 0;
+}
+
+#experience h2 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+#experience ul {
+    list-style-type: none;
+    margin-top: 10px;
+    font-size: 1.2em;
+    color: #555;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#experience ul li {
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+/* Contact section style */
+#contact {
+    background-color: #fff;
+    padding: 60px 0;
+    border-top: 2px solid #ddd;
+    text-align: center;
+}
+
+#contact h2 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+#contact p {
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+#contact a {
+    color: #4CAF50;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+#contact a:hover {
+    text-decoration: underline;
+}
+
+/* Footer style */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 1em;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.5em;
+    }
+
+    header p {
+        font-size: 1.1em;
+    }
+
+    #about p,
+    #education p,
+    #experience ul li,
+    #skills ul li {
+        font-size: 1em;
+    }
+
+    #skills ul {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    #skills ul li {
+        width: 90%;
+    }
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    overflow-y: scroll;
+    padding: 10px; /* 给画廊加点内边距 */
+}
+
+.person-frame {
+    width: calc(25% - 20px);  /* 每个 item 宽度为 25% 减去外边距 */
+    height: 413px;  /* 高度根据图片高度调整 */
+    margin: 10px;  /* 每个 item 之间的间距 */
+    /* border: 5px solid yellow;
+    background-color: pink; */
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.person-name {
+    color: white;
+    text-align: center;
+    margin-bottom: 10px;
+}
